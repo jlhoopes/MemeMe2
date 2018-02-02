@@ -11,6 +11,11 @@ import UIKit
 struct AppModel {
     static let defaultTopText = "TOP"
     static let defaultBottomText = "BOTTOM"
+    static let memesTableCellReuseIdentifier = "memesTableCell"
+    static let memesCollectionCellReuseIdentifier = "memesCollectionCell"
+    static let memeDetailStoryboardIdentifier = "MemeDetailViewController"
+    static let memeEditStoryboardIdentifier = "MemeEditViewController"
+    static let memeTableSegueIdentifier = "sentMemeTableView"
     
     static let memeTextAttributes = [
         NSAttributedStringKey.strokeColor.rawValue : UIColor.black,
@@ -21,4 +26,5 @@ struct AppModel {
     static let fontsAvailable = UIFont.familyNames
     static let currentFontIndex: Int = -1
     static var selectedFont: String = ""
+    
 }
